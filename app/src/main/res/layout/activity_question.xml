@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/tv_quz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What country does this flag \nbelongs to ?"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textColor="#363A43"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_flag_of_argentina"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_progress_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:id="@+id/progrssBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+                style="?android:progressBarStyleHorizontal"/>
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/10"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColorHint="#7A8089"
+                />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tv_option_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textColor="#7A8089"
+                android:textSize="18sp"
+                android:background="@drawable/default_option_border_bg"
+                tools:text="Argentina"/>
+
+            <TextView
+                android:id="@+id/tv_option_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textColor="#7A8089"
+                android:textSize="18sp"
+                android:background="@drawable/default_option_border_bg"
+                tools:text="Argentina"/>
+
+            <TextView
+                android:id="@+id/tv_option_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textColor="#7A8089"
+                android:textSize="18sp"
+                android:background="@drawable/default_option_border_bg"
+                tools:text="Argentina"/>
+
+            <TextView
+                android:id="@+id/tv_option_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textColor="#7A8089"
+                android:textSize="18sp"
+                android:background="@drawable/default_option_border_bg"
+                tools:text="Argentina"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
